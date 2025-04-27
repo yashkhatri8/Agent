@@ -1,0 +1,10 @@
+{
+    "output": {
+        "path": "./output",
+        "format": "json"
+    },
+    "input": {
+        "path": "./input",
+        "format": "json"
+    },      
+}
