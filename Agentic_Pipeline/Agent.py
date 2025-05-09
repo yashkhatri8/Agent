@@ -2,7 +2,7 @@
 
 from langgraph.graph import StateGraph, END
 from typing import TypedDict, Literal, Union
-
+#This is the first change
 from langchain_google_vertexai import ChatVertexAI
 from google.oauth2 import service_account
 import vertexai
@@ -18,7 +18,7 @@ credentials = service_account.Credentials.from_service_account_file(
     "/Users/yashkhatri/Downloads/stoked-producer-457308-m2-ddc5dd61eb91.json"
 )
 vertexai.init(project="stoked-producer-457308-m2", location="us-central1", credentials=credentials)
-
+#second change
 # 2. Define the LLM (Vertex AI Gemini)
 llm = ChatVertexAI(
     model_name="gemini-2.0-flash-001",  # Fast Gemini model
